@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { DndModule } from '@beyerleinf/ngx-dnd';
-import { FathymSharedModule } from '@lowcodeunit/common';
-import { BaseDisplayModule, ForgeBuildersCoreModule } from '@lowcodeunit/elements';
+import { FathymSharedModule } from '@lcu/hosting';
+import { BaseDisplayModule } from '@lcu/elements';
 import { ForgeMaterialNavToolbarBuilderComponent } from './material-nav-toolbar-builder/material-nav-toolbar-builder.component';
 import { ForgeMaterialNavToolbarMarketplaceComponent } from './material-nav-toolbar-marketplace/material-nav-toolbar-marketplace.component';
 import { ForgeMaterialNavToolbarRenderComponent } from './material-nav-toolbar-render/material-nav-toolbar-render.component';
@@ -30,7 +30,6 @@ var comps = [
 @NgModule({
 	imports: [
 		FathymSharedModule,
-		ForgeBuildersCoreModule,
 		DndModule,
 		MatAutocompleteModule,
 		MatButtonModule,
